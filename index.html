@@ -13,8 +13,7 @@
     }
 
     var pass = $("#pass").val();
-    var secretpath = hex_sha512(pass)
-    var url = window.location.href + secretpath.slice(0,secretpath.length-1) + "/index.html";
+    var url = window.location.href + hex_sha512(pass) + "/index.html";
     $("#status").text("...");
 
     $.ajax({
