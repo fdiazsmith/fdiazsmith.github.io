@@ -20,6 +20,7 @@
       type: 'HEAD',
       url: url,
       success: function() {
+        console.log(url)
         var iframe = $("#iframe");
         iframe.css("display", "inherit");
         iframe.attr("src", url);
